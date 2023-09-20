@@ -22,4 +22,9 @@ export class HeroesComponent implements OnInit {
 
   Hero = 'Windstorm';
 
+  selectedHero: Hero;
+onSelect(hero: Hero): void {
+  this.selectedHero = hero;
+}
+
 }

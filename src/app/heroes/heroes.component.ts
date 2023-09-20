@@ -18,6 +18,7 @@ export class HeroesComponent implements OnInit {
 
 
   ngOnInit() {
+    this.getHeroes();
   }
 
   onSelect(hero: Hero): void {
@@ -27,5 +28,5 @@ export class HeroesComponent implements OnInit {
   getHeroes(): void {
     this.heroes = this.heroService.getHeroes();
   }
-  
+
 }

@@ -3,3 +3,4 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 
 exports: [ RouterModule ]
 { path: 'dashboard', component: DashboardComponent },
+{ path: '', redirectTo: '/dashboard', pathMatch: 'full' },

@@ -2,7 +2,9 @@ imports: [ RouterModule.forRoot(routes) ],
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 
-exports: [ RouterModule ]
-{ path: 'dashboard', component: DashboardComponent },
-{ path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-{ path: 'detail/:id', component: HeroDetailComponent },
+const routes: Routes = [
+  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  { path: 'dashboard', component: DashboardComponent },
+  { path: 'detail/:id', component: HeroDetailComponent },
+  { path: 'heroes', component: HeroesComponent }
+];

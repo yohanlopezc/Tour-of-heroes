@@ -5,3 +5,4 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 exports: [ RouterModule ]
 { path: 'dashboard', component: DashboardComponent },
 { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+{ path: 'detail/:id', component: HeroDetailComponent },

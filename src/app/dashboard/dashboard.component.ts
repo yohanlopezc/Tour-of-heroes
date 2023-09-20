@@ -12,7 +12,11 @@ import { Location } from '@angular/common';
 export class DashboardComponent implements OnInit {
   heroes: Hero[] = [];
 
-  constructor(private heroService: HeroService) { }
+  constructor(
+    private route: ActivatedRoute,
+    private heroService: HeroService,
+    private location: Location
+    ) { }
 
   ngOnInit() {
     this.getHeroes();

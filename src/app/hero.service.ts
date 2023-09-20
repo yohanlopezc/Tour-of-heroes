@@ -9,4 +9,8 @@ export class HeroService {
 
   constructor() { }
 
+  getHeroes(): Hero[] {
+    return HEROES;
+  }
+
 }
